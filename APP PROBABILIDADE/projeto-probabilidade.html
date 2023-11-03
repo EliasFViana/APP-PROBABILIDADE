@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtk=divice-width, initial-scale=1.0">
+
+    <title>Login</title>
+</head>
+<body>
+    <h1>Faça o login</h1>
+    <form action="processo_de_login.php" method="post">
+        <label for="nome_de_usuario">Nome de Usuário:</label>
+        <input type="text" id="nome_de_usuario" name="nome_de_usuario" required>
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>
+    
+
+    
+    <title>Calculadora de Estatística e Probabilidade</title>
+
+            </head>
+            <body>
+                <h1>Calculadora de Estatística e Probabilidade</h1>
+                <form action="process.php" method="post">
+
+                    <label for="data1">Dado 1 :</label>
+                    <input type="text" id="data1" name="data1"
+                    pattern="([0-5]?[0-9], ?){5}[0-5]?[0-9]" title="Insira seis pares de números de 01 a 60 separados por vírgulas" maxlength="17" required>
+                    <br><br>
+            
+                    <label for="data2">Dado 2 :</label>
+                    <input type="text" id="data2" name="data2"
+                    pattern="([0-5]?[0-9], ?){5}[0-5]?[0-9]" title="Insira seis pares de números de 01 a 60 separados por vírgulas" maxlength="17" required>
+                    <br><br>
+            
+                    <label for="data3">Dado 3 :</label>
+                    <input type="text" id="data3" name="data3"
+                    pattern="([0-5]?[0-9], ?){5}[0-5]?[0-9]" title="Insira seis pares de números de 01 a 60 separados por vírgulas" maxlength="17" required>
+                    <br><br>
+
+                    <label for="data4">Dado 4 :</label>
+                    <input type="text" id="data4" name="data4"
+                    pattern="([0-5]?[0-9], ?){5}[0-5]?[0-9]" title="Insira seis pares de números de 01 a 60 separados por vírgulas" maxlength="17" required>
+                    <br><br>
+            
+                    <label for="data5">Dado 5 :</label>
+                    <input type="text" id="data5" name="data5"
+                    pattern="([0-5]?[0-9], ?){5}[0-5]?[0-9]" title="Insira seis pares de números de 01 a 60 separados por vírgulas" maxlength="17" required>
+                    <br><br>
+
+                    <label for="data6">Dado 6 :</label>
+                    <input type="text" id="data6" name="data6"
+                    pattern="([0-5]?[0-9], ?){5}[0-5]?[0-9]" title="Insira seis pares de números de 01 a 60 separados por vírgulas" maxlength="17" required>
+                    <br><br>
+            
+                    <label for="data7">Dado 7 :</label>
+                    <input type="text" id="data7" name="data7"
+                    pattern="([0-5]?[0-9], ?){5}[0-5]?[0-9]" title="Insira seis pares de números de 01 a 60 separados por vírgulas" maxlength="17" required>
+                    <br><br>
+            
+            
+                    <input type="submit" value="Calcular">
+        
+           </form>
+
+           <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('form').on('submit', function(e) {
+        e.preventDefault(); // Impede o envio padrão do formulário
+        $.post('calculo.php', function(data) {
+            $('#result').html(data); // Atualiza o conteúdo do parágrafo com o resultado do servidor
+        });
+    });
+});
+</script>
+
+    <h2>Resposta:</h2>
+    <form action="#" method="post">
+        <p  id="result">A resposta será exibida aqui. </p>
+   
+
+</form>
+</body>
+</html>
